@@ -8,16 +8,18 @@ if ($args.count -gt 2) {
 if ($args.count -gt 4) {
     $user=$args[3]
     $pass=$args[4]
-}
 
-$pair = "$($user):$($pass)"
+    $pair = "$($user):$($pass)"
 
-$encodedCreds = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($pair))
+    $encodedCreds = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($pair))
 
-$basicAuthValue = "Basic $encodedCreds"
+    $basicAuthValue = "Basic $encodedCreds"
 
-$Headers = @{
-    Authorization = $basicAuthValue
+    $Headers = @{
+        Authorization = $basicAuthValue
+    }
+} else {
+  $Headers = @{}
 }
 
 $urlRes = Invoke-WebRequest -Uri "http://localhost:${port}/jolokia/read/${arg1}/${arg2}" -Headers $Headers
