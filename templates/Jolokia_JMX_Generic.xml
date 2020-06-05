@@ -50,7 +50,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=ClassLoading&quot;,LoadedClassCount,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=ClassLoading&quot;,LoadedClassCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -93,7 +93,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=ClassLoading&quot;,TotalLoadedClassCount,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=ClassLoading&quot;,TotalLoadedClassCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -136,7 +136,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=ClassLoading&quot;,UnloadedClassCount,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=ClassLoading&quot;,UnloadedClassCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -179,7 +179,7 @@
                     <snmp_community/>
                     <multiplier>1</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=Compilation&quot;,TotalCompilationTime,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=Compilation&quot;,TotalCompilationTime,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -222,7 +222,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=Compilation&quot;,Name,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=Compilation&quot;,Name,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -265,7 +265,7 @@
                     <snmp_community/>
                     <multiplier>1</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=ConcurrentMarkSweep&quot;,CollectionTime,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=ConcurrentMarkSweep&quot;,CollectionTime,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -308,7 +308,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=ConcurrentMarkSweep&quot;,CollectionCount,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=ConcurrentMarkSweep&quot;,CollectionCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -351,7 +351,7 @@
                     <snmp_community/>
                     <multiplier>1</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=Copy&quot;,CollectionTime,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=Copy&quot;,CollectionTime,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -394,7 +394,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=Copy&quot;,CollectionCount,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=Copy&quot;,CollectionCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -437,7 +437,7 @@
                     <snmp_community/>
                     <multiplier>1</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=MarkSweepCompact&quot;,CollectionTime,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=MarkSweepCompact&quot;,CollectionTime,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -480,7 +480,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=MarkSweepCompact&quot;,CollectionCount,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=MarkSweepCompact&quot;,CollectionCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -523,7 +523,7 @@
                     <snmp_community/>
                     <multiplier>1</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=ParNew&quot;,CollectionTime,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=ParNew&quot;,CollectionTime,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -566,7 +566,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=ParNew&quot;,CollectionCount,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=ParNew&quot;,CollectionCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -609,7 +609,7 @@
                     <snmp_community/>
                     <multiplier>1</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=PS MarkSweep&quot;,CollectionTime,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=PS MarkSweep&quot;,CollectionTime,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -652,7 +652,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=PS MarkSweep&quot;,CollectionCount,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=PS MarkSweep&quot;,CollectionCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -695,7 +695,7 @@
                     <snmp_community/>
                     <multiplier>1</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=PS Scavenge&quot;,CollectionTime,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=PS Scavenge&quot;,CollectionTime,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -738,7 +738,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=PS Scavenge&quot;,CollectionCount,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=PS Scavenge&quot;,CollectionCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -781,7 +781,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=Runtime&quot;,VmName,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=Runtime&quot;,VmName,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -824,7 +824,7 @@
                     <snmp_community/>
                     <multiplier>1</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=Runtime&quot;,Uptime,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=Runtime&quot;,Uptime,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -867,7 +867,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=Runtime&quot;,VmVersion,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=Runtime&quot;,VmVersion,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -910,7 +910,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,HeapMemoryUsage/committed,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,HeapMemoryUsage/committed,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -953,7 +953,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,HeapMemoryUsage/max,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,HeapMemoryUsage/max,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -996,7 +996,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,HeapMemoryUsage/used,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,HeapMemoryUsage/used,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1039,7 +1039,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,NonHeapMemoryUsage/committed,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,NonHeapMemoryUsage/committed,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1082,7 +1082,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,NonHeapMemoryUsage/max,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,NonHeapMemoryUsage/max,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1125,7 +1125,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,NonHeapMemoryUsage/used,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,NonHeapMemoryUsage/used,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1168,7 +1168,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,ObjectPendingFinalizationCount,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,ObjectPendingFinalizationCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1211,7 +1211,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Old Gen&quot;,Usage/committed,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Old Gen&quot;,Usage/committed,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1254,7 +1254,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Old Gen&quot;,Usage/max,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Old Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1297,7 +1297,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Old Gen&quot;,Usage/used,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Old Gen&quot;,Usage/used,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1340,7 +1340,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Perm Gen&quot;,Usage/committed,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Perm Gen&quot;,Usage/committed,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1383,7 +1383,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Perm Gen&quot;,Usage/max,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Perm Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1426,7 +1426,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Perm Gen&quot;,Usage/used,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Perm Gen&quot;,Usage/used,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1469,7 +1469,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Code Cache&quot;,Usage/committed,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Code Cache&quot;,Usage/committed,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1512,7 +1512,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Code Cache&quot;,Usage/max,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Code Cache&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1555,7 +1555,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Code Cache&quot;,Usage/used,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Code Cache&quot;,Usage/used,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1598,7 +1598,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Perm Gen&quot;,Usage/committed,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Perm Gen&quot;,Usage/committed,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1641,7 +1641,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Perm Gen&quot;,Usage/max,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Perm Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1684,7 +1684,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Perm Gen&quot;,Usage/used,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Perm Gen&quot;,Usage/used,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1727,7 +1727,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Old Gen&quot;,Usage/committed,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Old Gen&quot;,Usage/committed,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1770,7 +1770,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Old Gen&quot;,Usage/max,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Old Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1813,7 +1813,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Old Gen&quot;,Usage/used,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Old Gen&quot;,Usage/used,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1856,7 +1856,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Perm Gen&quot;,Usage/committed,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Perm Gen&quot;,Usage/committed,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1899,7 +1899,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Perm Gen&quot;,Usage/max,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Perm Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1942,7 +1942,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Perm Gen&quot;,Usage/used,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Perm Gen&quot;,Usage/used,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -1985,7 +1985,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Tenured Gen&quot;,Usage/committed,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Tenured Gen&quot;,Usage/committed,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -2028,7 +2028,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Tenured Gen&quot;,Usage/max,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Tenured Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -2071,7 +2071,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Tenured Gen&quot;,Usage/used,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Tenured Gen&quot;,Usage/used,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -2114,7 +2114,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=OperatingSystem&quot;,MaxFileDescriptorCount,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=OperatingSystem&quot;,MaxFileDescriptorCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -2157,7 +2157,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=OperatingSystem&quot;,OpenFileDescriptorCount,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=OperatingSystem&quot;,OpenFileDescriptorCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -2200,7 +2200,7 @@
                     <snmp_community/>
                     <multiplier>1</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=OperatingSystem&quot;,ProcessCpuLoad,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=OperatingSystem&quot;,ProcessCpuLoad,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -2243,7 +2243,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=Threading&quot;,DaemonThreadCount,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=Threading&quot;,DaemonThreadCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -2286,7 +2286,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=Threading&quot;,PeakThreadCount,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=Threading&quot;,PeakThreadCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -2329,7 +2329,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=Threading&quot;,ThreadCount,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=Threading&quot;,ThreadCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -2372,7 +2372,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;java.lang:type=Threading&quot;,TotalStartedThreadCount,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;java.lang:type=Threading&quot;,TotalStartedThreadCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -2414,7 +2414,7 @@
             <macros>
                 <macro>
                     <macro>{$PORT}</macro>
-                    <value>13337</value>
+                    <value>8080</value>
                 </macro>
             </macros>
             <templates/>
@@ -2423,7 +2423,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,HeapMemoryUsage/used,{$PORT}].last(0)}&gt;({Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,HeapMemoryUsage/max,{$PORT}].last(0)}*0.7)</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,HeapMemoryUsage/used,{$PORT},{$USER},{$PASSWORD}].last(0)}&gt;({Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,HeapMemoryUsage/max,{$PORT},{$USER},{$PASSWORD}].last(0)}*0.7)</expression>
             <name>70% mem Heap Memory used on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2433,7 +2433,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,NonHeapMemoryUsage/used,{$PORT}].last(0)}&gt;({Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,NonHeapMemoryUsage/max,{$PORT}].last(0)}*0.7)</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,NonHeapMemoryUsage/used,{$PORT},{$USER},{$PASSWORD}].last(0)}&gt;({Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,NonHeapMemoryUsage/max,{$PORT},{$USER},{$PASSWORD}].last(0)}*0.7)</expression>
             <name>70% mem Non-Heap Memory used on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2443,7 +2443,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Old Gen&quot;,Usage/used,{$PORT}].last(0)}&gt;({Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Old Gen&quot;,Usage/max,{$PORT}].last(0)}*0.7)</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Old Gen&quot;,Usage/used,{$PORT},{$USER},{$PASSWORD}].last(0)}&gt;({Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Old Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}].last(0)}*0.7)</expression>
             <name>70% mp CMS Old Gen used on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2453,7 +2453,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Perm Gen&quot;,Usage/used,{$PORT}].last(0)}&gt;({Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Perm Gen&quot;,Usage/max,{$PORT}].last(0)}*0.7)</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Perm Gen&quot;,Usage/used,{$PORT},{$USER},{$PASSWORD}].last(0)}&gt;({Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Perm Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}].last(0)}*0.7)</expression>
             <name>70% mp CMS Perm Gen used on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2463,7 +2463,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Code Cache&quot;,Usage/used,{$PORT}].last(0)}&gt;({Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Code Cache&quot;,Usage/max,{$PORT}].last(0)}*0.7)</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Code Cache&quot;,Usage/used,{$PORT},{$USER},{$PASSWORD}].last(0)}&gt;({Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Code Cache&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}].last(0)}*0.7)</expression>
             <name>70% mp Code Cache used on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2473,7 +2473,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Perm Gen&quot;,Usage/used,{$PORT}].last(0)}&gt;({Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Perm Gen&quot;,Usage/max,{$PORT}].last(0)}*0.7)</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Perm Gen&quot;,Usage/used,{$PORT},{$USER},{$PASSWORD}].last(0)}&gt;({Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Perm Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}].last(0)}*0.7)</expression>
             <name>70% mp Perm Gen used on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2483,7 +2483,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Old Gen&quot;,Usage/used,{$PORT}].last(0)}&gt;({Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Old Gen&quot;,Usage/max,{$PORT}].last(0)}*0.7)</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Old Gen&quot;,Usage/used,{$PORT},{$USER},{$PASSWORD}].last(0)}&gt;({Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Old Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}].last(0)}*0.7)</expression>
             <name>70% mp PS Old Gen used on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2493,7 +2493,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Perm Gen&quot;,Usage/used,{$PORT}].last(0)}&gt;({Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Perm Gen&quot;,Usage/max,{$PORT}].last(0)}*0.7)</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Perm Gen&quot;,Usage/used,{$PORT},{$USER},{$PASSWORD}].last(0)}&gt;({Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Perm Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}].last(0)}*0.7)</expression>
             <name>70% mp PS Perm Gen used on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2503,7 +2503,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Tenured Gen&quot;,Usage/used,{$PORT}].last(0)}&gt;({Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Tenured Gen&quot;,Usage/max,{$PORT}].last(0)}*0.7)</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Tenured Gen&quot;,Usage/used,{$PORT},{$USER},{$PASSWORD}].last(0)}&gt;({Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Tenured Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}].last(0)}*0.7)</expression>
             <name>70% mp Tenured Gen used on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2513,7 +2513,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=OperatingSystem&quot;,OpenFileDescriptorCount,{$PORT}].last(0)}&gt;({Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=OperatingSystem&quot;,MaxFileDescriptorCount,{$PORT}].last(0)}*0.7)</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=OperatingSystem&quot;,OpenFileDescriptorCount,{$PORT},{$USER},{$PASSWORD}].last(0)}&gt;({Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=OperatingSystem&quot;,MaxFileDescriptorCount,{$PORT},{$USER},{$PASSWORD}].last(0)}*0.7)</expression>
             <name>70% os Opened File Descriptor Count used on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2523,7 +2523,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=OperatingSystem&quot;,ProcessCpuLoad,{$PORT}].avg(5m)}&gt;0.7</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=OperatingSystem&quot;,ProcessCpuLoad,{$PORT},{$USER},{$PASSWORD}].avg(5m)}&gt;0.7</expression>
             <name>70% os Process CPU Load on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2533,7 +2533,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=ParNew&quot;,CollectionCount,{$PORT}].last(0)}&lt;{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=ConcurrentMarkSweep&quot;,CollectionCount,{$PORT}].last(0)}</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=ParNew&quot;,CollectionCount,{$PORT},{$USER},{$PASSWORD}].last(0)}&lt;{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=ConcurrentMarkSweep&quot;,CollectionCount,{$PORT},{$USER},{$PASSWORD}].last(0)}</expression>
             <name>gc Concurrent Mark Sweep in fire fighting mode on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2543,7 +2543,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=Copy&quot;,CollectionCount,{$PORT}].last(0)}&lt;{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=MarkSweepCompact&quot;,CollectionCount,{$PORT}].last(0)}</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=Copy&quot;,CollectionCount,{$PORT},{$USER},{$PASSWORD}].last(0)}&lt;{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=MarkSweepCompact&quot;,CollectionCount,{$PORT},{$USER},{$PASSWORD}].last(0)}</expression>
             <name>gc Mark Sweep Compact in fire fighting mode on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2553,7 +2553,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=PS Scavenge&quot;,CollectionCount,{$PORT}].last(0)}&lt;{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=PS MarkSweep&quot;,CollectionCount,{$PORT}].last(0)}</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=PS Scavenge&quot;,CollectionCount,{$PORT},{$USER},{$PASSWORD}].last(0)}&lt;{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=PS MarkSweep&quot;,CollectionCount,{$PORT},{$USER},{$PASSWORD}].last(0)}</expression>
             <name>gc PS Mark Sweep in fire fighting mode on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2563,7 +2563,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,HeapMemoryUsage/committed,{$PORT}].last(0)}={Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,HeapMemoryUsage/max,{$PORT}].last(0)}</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,HeapMemoryUsage/committed,{$PORT},{$USER},{$PASSWORD}].last(0)}={Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,HeapMemoryUsage/max,{$PORT},{$USER},{$PASSWORD}].last(0)}</expression>
             <name>mem Heap Memory fully committed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2573,7 +2573,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,NonHeapMemoryUsage/committed,{$PORT}].last(0)}={Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,NonHeapMemoryUsage/max,{$PORT}].last(0)}</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,NonHeapMemoryUsage/committed,{$PORT},{$USER},{$PASSWORD}].last(0)}={Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Memory&quot;,NonHeapMemoryUsage/max,{$PORT},{$USER},{$PASSWORD}].last(0)}</expression>
             <name>mem Non-Heap Memory fully committed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2583,7 +2583,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Old Gen&quot;,Usage/committed,{$PORT}].last(0)}={Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Old Gen&quot;,Usage/max,{$PORT}].last(0)}</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Old Gen&quot;,Usage/committed,{$PORT},{$USER},{$PASSWORD}].last(0)}={Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Old Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}].last(0)}</expression>
             <name>mp CMS Old Gen fully committed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2593,7 +2593,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Perm Gen&quot;,Usage/committed,{$PORT}].last(0)}={Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Perm Gen&quot;,Usage/max,{$PORT}].last(0)}</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Perm Gen&quot;,Usage/committed,{$PORT},{$USER},{$PASSWORD}].last(0)}={Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Perm Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}].last(0)}</expression>
             <name>mp CMS Perm Gen fully committed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2603,7 +2603,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Code Cache&quot;,Usage/committed,{$PORT}].last(0)}={Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Code Cache&quot;,Usage/max,{$PORT}].last(0)}</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Code Cache&quot;,Usage/committed,{$PORT},{$USER},{$PASSWORD}].last(0)}={Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Code Cache&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}].last(0)}</expression>
             <name>mp Code Cache fully committed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2613,7 +2613,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Perm Gen&quot;,Usage/committed,{$PORT}].last(0)}={Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Perm Gen&quot;,Usage/max,{$PORT}].last(0)}</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Perm Gen&quot;,Usage/committed,{$PORT},{$USER},{$PASSWORD}].last(0)}={Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Perm Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}].last(0)}</expression>
             <name>mp Perm Gen fully committed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2623,7 +2623,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Old Gen&quot;,Usage/committed,{$PORT}].last(0)}={Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Old Gen&quot;,Usage/max,{$PORT}].last(0)}</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Old Gen&quot;,Usage/committed,{$PORT},{$USER},{$PASSWORD}].last(0)}={Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Old Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}].last(0)}</expression>
             <name>mp PS Old Gen fully committed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2633,7 +2633,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Perm Gen&quot;,Usage/committed,{$PORT}].last(0)}={Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Perm Gen&quot;,Usage/max,{$PORT}].last(0)}</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Perm Gen&quot;,Usage/committed,{$PORT},{$USER},{$PASSWORD}].last(0)}={Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Perm Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}].last(0)}</expression>
             <name>mp PS Perm Gen fully committed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2643,7 +2643,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Tenured Gen&quot;,Usage/committed,{$PORT}].last(0)}={Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Tenured Gen&quot;,Usage/max,{$PORT}].last(0)}</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Tenured Gen&quot;,Usage/committed,{$PORT},{$USER},{$PASSWORD}].last(0)}={Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Tenured Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}].last(0)}</expression>
             <name>mp Tenured Gen fully committed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -2653,7 +2653,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Runtime&quot;,Uptime,{$PORT}].nodata(5m)}=1</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Runtime&quot;,Uptime,{$PORT},{$USER},{$PASSWORD}].nodata(5m)}=1</expression>
             <name>{HOST.NAME} JVM is not reachable</name>
             <url/>
             <status>0</status>
@@ -2663,7 +2663,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Runtime&quot;,VmName,{$PORT}].str(Server)}&lt;&gt;1</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Runtime&quot;,VmName,{$PORT},{$USER},{$PASSWORD}].str(Server)}&lt;&gt;1</expression>
             <name>{HOST.NAME} runs suboptimal VM type</name>
             <url/>
             <status>0</status>
@@ -2673,7 +2673,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Compilation&quot;,Name,{$PORT}].str(Client)}=1</expression>
+            <expression>{Jolokia JMX Generic:jolokia.jmx.read[&quot;java.lang:type=Compilation&quot;,Name,{$PORT},{$USER},{$PASSWORD}].str(Client)}=1</expression>
             <name>{HOST.NAME} uses suboptimal JIT compiler</name>
             <url/>
             <status>0</status>
@@ -2711,7 +2711,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=ClassLoading&quot;,TotalLoadedClassCount,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=ClassLoading&quot;,TotalLoadedClassCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2723,7 +2723,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=ClassLoading&quot;,UnloadedClassCount,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=ClassLoading&quot;,UnloadedClassCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2735,7 +2735,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=ClassLoading&quot;,LoadedClassCount,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=ClassLoading&quot;,LoadedClassCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -2767,7 +2767,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=OperatingSystem&quot;,MaxFileDescriptorCount,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=OperatingSystem&quot;,MaxFileDescriptorCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2779,7 +2779,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=OperatingSystem&quot;,OpenFileDescriptorCount,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=OperatingSystem&quot;,OpenFileDescriptorCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -2811,7 +2811,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=PS Scavenge&quot;,CollectionCount,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=PS Scavenge&quot;,CollectionCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2823,7 +2823,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=ConcurrentMarkSweep&quot;,CollectionCount,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=ConcurrentMarkSweep&quot;,CollectionCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2835,7 +2835,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=Copy&quot;,CollectionCount,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=Copy&quot;,CollectionCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2847,7 +2847,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=MarkSweepCompact&quot;,CollectionCount,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=MarkSweepCompact&quot;,CollectionCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2859,7 +2859,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=PS MarkSweep&quot;,CollectionCount,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=PS MarkSweep&quot;,CollectionCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2871,7 +2871,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=ParNew&quot;,CollectionCount,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=GarbageCollector,name=ParNew&quot;,CollectionCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -2903,7 +2903,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Old Gen&quot;,Usage/committed,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Old Gen&quot;,Usage/committed,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2915,7 +2915,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Old Gen&quot;,Usage/max,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Old Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2927,7 +2927,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Old Gen&quot;,Usage/used,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Old Gen&quot;,Usage/used,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -2959,7 +2959,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Perm Gen&quot;,Usage/committed,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Perm Gen&quot;,Usage/committed,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2971,7 +2971,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Perm Gen&quot;,Usage/max,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Perm Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2983,7 +2983,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Perm Gen&quot;,Usage/used,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=CMS Perm Gen&quot;,Usage/used,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -3015,7 +3015,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Code Cache&quot;,Usage/committed,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Code Cache&quot;,Usage/committed,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -3027,7 +3027,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Code Cache&quot;,Usage/max,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Code Cache&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -3039,7 +3039,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Code Cache&quot;,Usage/used,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Code Cache&quot;,Usage/used,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -3071,7 +3071,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Perm Gen&quot;,Usage/committed,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Perm Gen&quot;,Usage/committed,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -3083,7 +3083,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Perm Gen&quot;,Usage/max,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Perm Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -3095,7 +3095,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Perm Gen&quot;,Usage/used,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Perm Gen&quot;,Usage/used,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -3127,7 +3127,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Old Gen&quot;,Usage/committed,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Old Gen&quot;,Usage/committed,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -3139,7 +3139,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Old Gen&quot;,Usage/max,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Old Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -3151,7 +3151,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Old Gen&quot;,Usage/used,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Old Gen&quot;,Usage/used,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -3183,7 +3183,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Perm Gen&quot;,Usage/committed,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Perm Gen&quot;,Usage/committed,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -3195,7 +3195,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Perm Gen&quot;,Usage/max,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Perm Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -3207,7 +3207,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Perm Gen&quot;,Usage/used,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=PS Perm Gen&quot;,Usage/used,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -3239,7 +3239,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Tenured Gen&quot;,Usage/committed,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Tenured Gen&quot;,Usage/committed,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -3251,7 +3251,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Tenured Gen&quot;,Usage/max,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Tenured Gen&quot;,Usage/max,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -3263,7 +3263,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Tenured Gen&quot;,Usage/used,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=MemoryPool,name=Tenured Gen&quot;,Usage/used,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -3295,7 +3295,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=Threading&quot;,PeakThreadCount,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=Threading&quot;,PeakThreadCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -3307,7 +3307,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=Threading&quot;,DaemonThreadCount,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=Threading&quot;,DaemonThreadCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -3319,7 +3319,7 @@
                     <type>0</type>
                     <item>
                         <host>Jolokia JMX Generic</host>
-                        <key>jolokia.jmx.read[&quot;java.lang:type=Threading&quot;,ThreadCount,{$PORT}]</key>
+                        <key>jolokia.jmx.read[&quot;java.lang:type=Threading&quot;,ThreadCount,{$PORT},{$USER},{$PASSWORD}]</key>
                     </item>
                 </graph_item>
             </graph_items>

@@ -32,7 +32,7 @@
                     <type>0</type>
                     <snmp_community/>
                     <snmp_oid/>
-                    <key>jolokia.jmx.discovery[&quot;org.apache.activemq:brokerName=%2A,type=Broker&quot;,BrokerName,{$PORT}]</key>
+                    <key>jolokia.jmx.discovery[&quot;org.apache.activemq:brokerName=%2A,type=Broker&quot;,BrokerName,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>3600</delay>
                     <status>0</status>
                     <allowed_hosts/>
@@ -66,7 +66,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,MemoryLimit,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,MemoryLimit,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -109,7 +109,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,MemoryPercentUsage,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,MemoryPercentUsage,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -152,7 +152,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,StoreLimit,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,StoreLimit,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -195,7 +195,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,StorePercentUsage,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,StorePercentUsage,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -238,7 +238,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TempLimit,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TempLimit,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -281,7 +281,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TempPercentUsage,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TempPercentUsage,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -324,7 +324,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TotalConsumerCount,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TotalConsumerCount,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>60</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -367,7 +367,7 @@
                             <snmp_community/>
                             <multiplier>1</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TotalDequeueCount,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TotalDequeueCount,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>30</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -410,7 +410,7 @@
                             <snmp_community/>
                             <multiplier>1</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TotalEnqueueCount,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TotalEnqueueCount,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>30</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -453,7 +453,7 @@
                             <snmp_community/>
                             <multiplier>1</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TotalMessageCount,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TotalMessageCount,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>30</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -493,7 +493,7 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Jolokia JMX ActiveMQ:jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,MemoryPercentUsage,{$PORT}].last(0)}&gt;{$AMQ_BROKER_MEM_USAGE_THRESHOLD}</expression>
+                            <expression>{Jolokia JMX ActiveMQ:jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,MemoryPercentUsage,{$PORT},{$USER},{$PASSWORD}].last(0)}&gt;{$AMQ_BROKER_MEM_USAGE_THRESHOLD}</expression>
                             <name>MemoryPercentUsage &gt;{$AMQ_BROKER_MEM_USAGE_THRESHOLD}% for broker {#JMXOBJ_ATTR_BROKERNAME}</name>
                             <url/>
                             <status>0</status>
@@ -502,7 +502,7 @@
                             <type>0</type>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Jolokia JMX ActiveMQ:jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,StorePercentUsage,{$PORT}].last(0)}&gt;{$AMQ_BROKER_STORE_USAGE_THRESHOLD}</expression>
+                            <expression>{Jolokia JMX ActiveMQ:jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,StorePercentUsage,{$PORT},{$USER},{$PASSWORD}].last(0)}&gt;{$AMQ_BROKER_STORE_USAGE_THRESHOLD}</expression>
                             <name>StorePercentUsage &gt;{$AMQ_BROKER_STORE_USAGE_THRESHOLD}% for broker {#JMXOBJ_ATTR_BROKERNAME}</name>
                             <url/>
                             <status>0</status>
@@ -511,7 +511,7 @@
                             <type>0</type>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Jolokia JMX ActiveMQ:jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TempPercentUsage,{$PORT}].last(0)}&gt;{$AMQ_BROKER_TMP_USAGE_THRESHOLD}</expression>
+                            <expression>{Jolokia JMX ActiveMQ:jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TempPercentUsage,{$PORT},{$USER},{$PASSWORD}].last(0)}&gt;{$AMQ_BROKER_TMP_USAGE_THRESHOLD}</expression>
                             <name>TempPercentUsage &gt;{$AMQ_BROKER_TMP_USAGE_THRESHOLD}% for broker {#JMXOBJ_ATTR_BROKERNAME}</name>
                             <url/>
                             <status>0</status>
@@ -548,7 +548,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>Jolokia JMX ActiveMQ</host>
-                                        <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,MemoryLimit,{$PORT}]</key>
+                                        <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,MemoryLimit,{$PORT},{$USER},{$PASSWORD}]</key>
                                     </item>
                                 </graph_item>
                                 <graph_item>
@@ -560,7 +560,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>Jolokia JMX ActiveMQ</host>
-                                        <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,StoreLimit,{$PORT}]</key>
+                                        <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,StoreLimit,{$PORT},{$USER},{$PASSWORD}]</key>
                                     </item>
                                 </graph_item>
                                 <graph_item>
@@ -572,7 +572,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>Jolokia JMX ActiveMQ</host>
-                                        <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TempLimit,{$PORT}]</key>
+                                        <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TempLimit,{$PORT},{$USER},{$PASSWORD}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -604,7 +604,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>Jolokia JMX ActiveMQ</host>
-                                        <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,MemoryPercentUsage,{$PORT}]</key>
+                                        <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,MemoryPercentUsage,{$PORT},{$USER},{$PASSWORD}]</key>
                                     </item>
                                 </graph_item>
                                 <graph_item>
@@ -616,7 +616,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>Jolokia JMX ActiveMQ</host>
-                                        <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,StorePercentUsage,{$PORT}]</key>
+                                        <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,StorePercentUsage,{$PORT},{$USER},{$PASSWORD}]</key>
                                     </item>
                                 </graph_item>
                                 <graph_item>
@@ -628,7 +628,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>Jolokia JMX ActiveMQ</host>
-                                        <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TempPercentUsage,{$PORT}]</key>
+                                        <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TempPercentUsage,{$PORT},{$USER},{$PASSWORD}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -660,7 +660,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>Jolokia JMX ActiveMQ</host>
-                                        <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TotalDequeueCount,{$PORT}]</key>
+                                        <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TotalDequeueCount,{$PORT},{$USER},{$PASSWORD}]</key>
                                     </item>
                                 </graph_item>
                                 <graph_item>
@@ -672,7 +672,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>Jolokia JMX ActiveMQ</host>
-                                        <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TotalEnqueueCount,{$PORT}]</key>
+                                        <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TotalEnqueueCount,{$PORT},{$USER},{$PASSWORD}]</key>
                                     </item>
                                 </graph_item>
                                 <graph_item>
@@ -684,7 +684,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>Jolokia JMX ActiveMQ</host>
-                                        <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TotalMessageCount,{$PORT}]</key>
+                                        <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,TotalMessageCount,{$PORT},{$USER},{$PASSWORD}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
@@ -697,7 +697,7 @@
                     <type>0</type>
                     <snmp_community/>
                     <snmp_oid/>
-                    <key>jolokia.jmx.discovery[&quot;org.apache.activemq:brokerName=%2A,destinationName=%2A,destinationType=Queue,type=Broker&quot;,Subscriptions,{$PORT}]</key>
+                    <key>jolokia.jmx.discovery[&quot;org.apache.activemq:brokerName=%2A,destinationName=%2A,destinationType=Queue,type=Broker&quot;,Subscriptions,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>3600</delay>
                     <status>0</status>
                     <allowed_hosts/>
@@ -731,7 +731,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,AverageEnqueueTime,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,AverageEnqueueTime,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>300</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -774,7 +774,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,ConsumerCount,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,ConsumerCount,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>60</delay>
                             <history>30</history>
                             <trends>365</trends>
@@ -817,7 +817,7 @@
                             <snmp_community/>
                             <multiplier>1</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,DequeueCount,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,DequeueCount,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>30</delay>
                             <history>30</history>
                             <trends>365</trends>
@@ -860,7 +860,7 @@
                             <snmp_community/>
                             <multiplier>1</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,EnqueueCount,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,EnqueueCount,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>30</delay>
                             <history>30</history>
                             <trends>365</trends>
@@ -903,7 +903,7 @@
                             <snmp_community/>
                             <multiplier>1</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,ExpiredCount,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,ExpiredCount,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>30</delay>
                             <history>30</history>
                             <trends>365</trends>
@@ -946,7 +946,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,ProducerCount,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,ProducerCount,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>60</delay>
                             <history>30</history>
                             <trends>365</trends>
@@ -989,7 +989,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,QueueSize,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,QueueSize,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>60</delay>
                             <history>30</history>
                             <trends>365</trends>
@@ -1029,7 +1029,7 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Jolokia JMX ActiveMQ:jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,ExpiredCount,{$PORT}].last(0)}&gt;0</expression>
+                            <expression>{Jolokia JMX ActiveMQ:jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,ExpiredCount,{$PORT},{$USER},{$PASSWORD}].last(0)}&gt;0</expression>
                             <name>Expired messages in {#JMXOBJ_ATTR_DESTINATIONNAME} at {#JMXOBJ_ATTR_BROKERNAME}!</name>
                             <url/>
                             <status>0</status>
@@ -1038,7 +1038,7 @@
                             <type>0</type>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Jolokia JMX ActiveMQ:jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,QueueSize,{$PORT}].last(0)}&gt;{$AMQ_DESTINATION_QUEUE_SIZE_THRESHOLD}</expression>
+                            <expression>{Jolokia JMX ActiveMQ:jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,QueueSize,{$PORT},{$USER},{$PASSWORD}].last(0)}&gt;{$AMQ_DESTINATION_QUEUE_SIZE_THRESHOLD}</expression>
                             <name>QueueSize &gt;{$AMQ_DESTINATION_QUEUE_SIZE_THRESHOLD} for {#JMXOBJ_ATTR_DESTINATIONNAME} at {#JMXOBJ_ATTR_BROKERNAME}</name>
                             <url/>
                             <status>0</status>
@@ -1047,7 +1047,7 @@
                             <type>0</type>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Jolokia JMX ActiveMQ:jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,ConsumerCount,{$PORT}].last(0)}&lt;{$AMQ_DESTINATION_CONSUMER_COUNT_THRESHOLD_MIN}</expression>
+                            <expression>{Jolokia JMX ActiveMQ:jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,ConsumerCount,{$PORT},{$USER},{$PASSWORD}].last(0)}&lt;{$AMQ_DESTINATION_CONSUMER_COUNT_THRESHOLD_MIN}</expression>
                             <name>Too few (&lt;{$AMQ_DESTINATION_CONSUMER_COUNT_THRESHOLD_MIN}) consumers for {#JMXOBJ_ATTR_DESTINATIONNAME} at {#JMXOBJ_ATTR_BROKERNAME}</name>
                             <url/>
                             <status>0</status>
@@ -1056,7 +1056,7 @@
                             <type>0</type>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Jolokia JMX ActiveMQ:jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,ProducerCount,{$PORT}].last(0)}&lt;{$AMQ_DESTINATION_PRODUCER_COUNT_THRESHOLD_MIN}</expression>
+                            <expression>{Jolokia JMX ActiveMQ:jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,ProducerCount,{$PORT},{$USER},{$PASSWORD}].last(0)}&lt;{$AMQ_DESTINATION_PRODUCER_COUNT_THRESHOLD_MIN}</expression>
                             <name>Too few (&lt;{$AMQ_DESTINATION_PRODUCER_COUNT_THRESHOLD_MIN}) producers for {#JMXOBJ_ATTR_DESTINATIONNAME} at {#JMXOBJ_ATTR_BROKERNAME}</name>
                             <url/>
                             <status>0</status>
@@ -1096,7 +1096,7 @@
                 </macro>
                 <macro>
                     <macro>{$PORT}</macro>
-                    <value>13337</value>
+                    <value>8080</value>
                 </macro>
             </macros>
             <templates/>

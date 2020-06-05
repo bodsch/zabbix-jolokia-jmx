@@ -29,7 +29,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>jolokia.jmx.read[&quot;Catalina:type=Server&quot;,serverInfo,{$PORT}]</key>
+                    <key>jolokia.jmx.read[&quot;Catalina:type=Server&quot;,serverInfo,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>3600</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -73,7 +73,7 @@
                     <type>0</type>
                     <snmp_community/>
                     <snmp_oid/>
-                    <key>jolokia.jmx.discovery[&quot;Catalina:name=%2A,type=GlobalRequestProcessor&quot;,modelerType,{$PORT}]</key>
+                    <key>jolokia.jmx.discovery[&quot;Catalina:name=%2A,type=GlobalRequestProcessor&quot;,modelerType,{$PORT},{$USER},{$PASSWORD}]</key>
                     <delay>3600</delay>
                     <status>0</status>
                     <allowed_hosts/>
@@ -107,7 +107,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,bytesReceived,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,bytesReceived,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>30</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -150,7 +150,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,bytesSent,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,bytesSent,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>30</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -193,7 +193,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,errorCount,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,errorCount,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>30</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -236,7 +236,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,processingTime,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,processingTime,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>30</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -279,7 +279,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,requestCount,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;{#JMXOBJ}&quot;,requestCount,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>30</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -322,7 +322,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;Catalina:type=ThreadPool,name={#JMXOBJ_ATTR_NAME}&quot;,currentThreadCount,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;Catalina:type=ThreadPool,name={#JMXOBJ_ATTR_NAME}&quot;,currentThreadCount,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>30</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -365,7 +365,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;Catalina:type=ThreadPool,name={#JMXOBJ_ATTR_NAME}&quot;,currentThreadsBusy,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;Catalina:type=ThreadPool,name={#JMXOBJ_ATTR_NAME}&quot;,currentThreadsBusy,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>30</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -408,7 +408,7 @@
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>jolokia.jmx.read[&quot;Catalina:type=ThreadPool,name={#JMXOBJ_ATTR_NAME}&quot;,maxThreads,{$PORT}]</key>
+                            <key>jolokia.jmx.read[&quot;Catalina:type=ThreadPool,name={#JMXOBJ_ATTR_NAME}&quot;,maxThreads,{$PORT},{$USER},{$PASSWORD}]</key>
                             <delay>30</delay>
                             <history>90</history>
                             <trends>365</trends>
@@ -454,7 +454,7 @@
             <macros>
                 <macro>
                     <macro>{$PORT}</macro>
-                    <value>13337</value>
+                    <value>8080</value>
                 </macro>
             </macros>
             <templates/>
