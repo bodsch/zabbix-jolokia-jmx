@@ -22,7 +22,7 @@ if ($args.count -gt 4) {
   $Headers = @{}
 }
 
-$urlRes = Invoke-WebRequest -Uri "http://localhost:${port}/jolokia/read/${arg1}/${arg2}" -Headers $Headers
+$urlRes = Invoke-WebRequest -Uri "http://localhost:${port}/jolokia/read/${arg1}/${arg2}" -Headers $Headers -UseBasicParsing
 if ($urlRes.StatusCode -ne 200) {
     Write-Host "ZBX_NOTSUPPORTED"
     exit
