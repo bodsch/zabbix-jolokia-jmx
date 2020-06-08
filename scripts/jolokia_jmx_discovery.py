@@ -45,15 +45,9 @@ data = list()
 line = {}
 
 j = 0
-from pprint import pprint
-pprint(resp_dict['value'])
 for jmxobj in resp_dict['value']:
-    #print(resp_dict['value'][jmxobj][arg2])
-    #print(jmxobj)
-
 
     jmxobj_dict = jmxobj.split(':')
-    #print jmxobj_dict
 
     line["{#JMXOBJ}"] = jmxobj.replace('\"','%22')
     line["{#JMXOBJ_BEAN}"] = jmxobj_dict[0]
