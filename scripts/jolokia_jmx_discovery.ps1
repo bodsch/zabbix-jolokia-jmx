@@ -21,16 +21,17 @@ $Headers = @{
     Authorization = $basicAuthValue
 }
 
-$urlRes = Invoke-WebRequest -Uri "http://localhost:${port}/jolokia/read/${arg1}/${arg2}" -Headers $Headers -UseBasicParsing
-if ($urlRes.StatusCode -ne 200) {
+$ProgressPreference = 'SilentlyContinue'
+try {
+    $urlRes = Invoke-RestMethod -Uri "http://localhost:${port}/jolokia/read/${arg1}/${arg2}" -Headers $Headers -UseBasicParsing
+} catch {
     Write-Host "ZBX_NOTSUPPORTED"
     exit
 }
-$urlJson = $urlRes.Content | ConvertFrom-Json
 
 $Data = @{"data" = @()}
 
-$urlJson.value | ForEach-Object {
+$urlRes.value | ForEach-Object {
     $_.PSObject.Properties | ForEach-Object {
       $jmx_obj = $_.Name.Split(':')
 
