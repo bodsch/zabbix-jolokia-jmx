@@ -1,43 +1,120 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
+
 import urllib.request
+from urllib.error import URLError, HTTPError
 import json
 import sys
-import base64
+# import base64
+import argparse
+import logging
+from enum import Enum
 
-#verify we have at least two arguments
-if len(sys.argv) < 3:
-    print("at least two arguments required!")
-    exit(1)
 
-attr = sys.argv[1].replace(' ','%20')
-key = sys.argv[2].replace(' ','%20')
+class JolokiaRead(object):
+    """
+      docstring for JolokiaRead
+    """
+    class ExitCode(Enum):
+        """
+          Enum Class to better select ExitCodes
+        """
+        OK = 0
+        WARNING = 1
+        CRITICAL = 2
+        UNKNOWN = 3
 
-#see if arg3 exists, if not then use 13337 as the default port
-try:
-    port = sys.argv[3]
-except IndexError:
-    port = "8080"
+    def __init__(self):
+        """
 
-#argument 1 is the bean
-#argument 2 is the key
-url = "http://localhost:" + port + "/jolokia/read/" + attr + "/" + key
+        """
+        self.args = {}
+        self.parse_args()
 
-if len(sys.argv) >= 5:
-    password_mgr = urllib.request.HTTPPasswordMgrWithDefaultRealm()
-    password_mgr.add_password(None, url, sys.argv[4], sys.argv[5])
-    handler = urllib.request.HTTPBasicAuthHandler(password_mgr)
+        self.host = self.args.hostname
+        self.port = self.args.port
+        self.username = self.args.username
+        self.password = self.args.password
+        self.attr = self.args.attr
+        self.key = self.args.key
 
-    proxy_support = urllib.request.ProxyHandler({})
-    opener = urllib.request.build_opener(handler, proxy_support)
+        self.attr = self.attr.replace(' ', '%20')
+        self.key = self.key.replace(' ', '%20')
 
-page = opener.open(url).read()
+        # argument 1 is the bean
+        # argument 2 is the key
+        self.url = "http://{}:{}/jolokia/read/{}/{}".format(
+            self.host,
+            self.port,
+            self.attr,
+            self.key)
 
-#put in the response dictionary
-resp_dict = json.loads(page)
+        self.log = logging.getLogger('JolokiaRead')
+        streamhandler = logging.StreamHandler(sys.stdout)
+        self.log.addHandler(streamhandler)
+        self.log.setLevel(logging.INFO)
 
-#log what happened, this is for testing.  Also let Zabbix know that the item sent was not supported.
-if resp_dict['status'] != 200:
-    print("ZBX_NOTSUPPORTED")
-    exit()
+    def parse_args(self):
+        """
+          parse commandline parameters
+        """
+        p = argparse.ArgumentParser(description='Icinga2 slack notification')
 
-print(resp_dict['value'])
+        p.add_argument('--hostname', required=True,
+                       help="connect to jolokia endpoint")
+        p.add_argument('--port', default="8080")
+        p.add_argument('--attr', required=True, help="java.lang:type=Memory")
+        p.add_argument('--key', required=True, help="HeapMemoryUsage")
+        p.add_argument('--username')
+        p.add_argument('--password')
+
+        self.args = p.parse_args()
+
+    def check(self):
+        """
+
+        """
+        status = 404
+
+        if(self.username and self.password):
+            password_mgr = urllib.request.HTTPPasswordMgrWithDefaultRealm()
+            password_mgr.add_password(
+              None,
+              self.url,
+              self.username,
+              self.password)
+            handler = urllib.request.HTTPBasicAuthHandler(password_mgr)
+            proxy_support = urllib.request.ProxyHandler({})
+
+            opener = urllib.request.build_opener(handler, proxy_support)
+        else:
+            opener = urllib.request.build_opener()
+
+        if(opener):
+            try:
+                page = opener.open(self.url).read()
+            except HTTPError as ex:
+                print("Error code: {}".format(ex.code))
+                sys.exit(self.ExitCode.CRITICAL.value)
+            except URLError as ex:
+                print("Error: {}".format(ex.reason))
+                sys.exit(self.ExitCode.CRITICAL.value)
+            else:
+                resp_dict = json.loads(page)
+
+                if(isinstance(resp_dict, dict)):
+                    status = resp_dict.get('status')
+
+        # log what happened, this is for testing.
+        # Also let Zabbix know that the item sent was not supported.
+        if(status != 200):
+            print("ZBX_NOTSUPPORTED")
+            sys.exit(self.ExitCode.CRITICAL.value)
+
+        print(resp_dict.get('value'))
+        sys.exit(self.ExitCode.OK.value)
+
+# -------------------------------------------------------------------------------------------------
+
+
+jolokia = JolokiaRead()
+jolokia.check()
