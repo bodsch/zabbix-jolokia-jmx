@@ -110,7 +110,8 @@ class JolokiaRead(object):
             print("ZBX_NOTSUPPORTED")
             sys.exit(self.ExitCode.CRITICAL.value)
 
-        print(resp_dict.get('value'))
+        print(json.dumps(resp_dict.get('value')))
+
         sys.exit(self.ExitCode.OK.value)
 
 # -------------------------------------------------------------------------------------------------
